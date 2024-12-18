@@ -2,6 +2,8 @@ pipeline {
     agent any
 
     environment {
+        ARTIFACT_VERSION = '6.10.4'
+        DEPLOY_ENVIRONMENT = 'staging'
         GIT_CREDENTIALS_ID = 'my_github_key'
     }
 
@@ -55,6 +57,16 @@ pipeline {
         }
         success {
             echo 'Pipeline succeeded.'
+            script {
+                echo 'Triggering the next job...'
+                build job: 'PythonLearn',
+                parameters: [
+                    string(name: 'ARTIFACT_VERSION', value: env.ARTIFACT_VERSION),
+                    string(name: 'DEPLOY_ENVIRONMENT', value: env.DEPLOY_ENVIRONMENT)
+                ],
+                wait: false
+            }
+        
         }
         failure {
             echo 'Pipeline failed.'
