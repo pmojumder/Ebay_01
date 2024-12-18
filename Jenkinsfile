@@ -18,7 +18,7 @@ pipeline {
                         submoduleCfg: [],
                         userRemoteConfigs: [[
                             credentialsId: env.GIT_CREDENTIALS_ID,
-                            url: 'https://github.com/pmojumder/OrangeHRM_2111.git'
+                            url: 'https://github.com/pmojumder/Ebay_01.git'
                         ]]
                     ])
                 }
