@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-12-18T23:05:49 IST" name="EbayAutomationSuite" finished-at="2024-12-18T23:05:55 IST" duration-ms="6333">
+    <groups>
+    </groups>
+    <test started-at="2024-12-18T23:05:49 IST" name="ChromeTest" finished-at="2024-12-18T23:05:55 IST" duration-ms="6160">
+      <class name="Test.Ebay_Parallel">
+        <test-method is-config="true" signature="ebay(java.lang.String)[pri:0, instance:Test.Ebay_Parallel@740cae06]" started-at="2024-12-18T23:05:49 IST" name="ebay" finished-at="2024-12-18T23:05:52 IST" duration-ms="3412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ebay -->
+        <test-method signature="test()[pri:0, instance:Test.Ebay_Parallel@740cae06]" started-at="2024-12-18T23:05:52 IST" name="test" finished-at="2024-12-18T23:05:55 IST" duration-ms="2667" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- Test.Ebay_Parallel -->
+    </test> <!-- ChromeTest -->
+    <test started-at="2024-12-18T23:05:49 IST" name="DefaultTest" finished-at="2024-12-18T23:05:55 IST" duration-ms="6333">
+      <class name="Test.Ebay_Parallel">
+        <test-method is-config="true" signature="ebay(java.lang.String)[pri:0, instance:Test.Ebay_Parallel@1033576a]" started-at="2024-12-18T23:05:49 IST" name="ebay" finished-at="2024-12-18T23:05:52 IST" duration-ms="3412" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[default]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ebay -->
+        <test-method signature="test()[pri:0, instance:Test.Ebay_Parallel@1033576a]" started-at="2024-12-18T23:05:52 IST" name="test" finished-at="2024-12-18T23:05:55 IST" duration-ms="2847" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- Test.Ebay_Parallel -->
+    </test> <!-- DefaultTest -->
+  </suite> <!-- EbayAutomationSuite -->
+</testng-results>
